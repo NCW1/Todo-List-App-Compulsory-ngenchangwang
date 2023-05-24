@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>To-Do List App</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>To-Do List App</h1>
+		<div class="filters">
+			<div class="filter">
+				<label for="user-filter">Filter by User: </label>
+				<select id="user-filter"></select>
+			</div>
+
+			<div class="filter">
+				<label for="completed-filter">Filter by Completed: </label>
+				<select id="completed-filter">
+					<option value="">All</option>
+					<option value="true">Completed</option>
+					<option value="false">Not Completed</option>
+				</select>
+			</div>
+		</div>
+
+		<table id="todo-table">
+			<tbody id="todo-list"></tbody>
+		</table>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
