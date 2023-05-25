@@ -1,7 +1,9 @@
 // Fetch todos from the API
 fetch('https://jsonplaceholder.typicode.com/todos')
+	// Process the response data
 	.then(response => response.json())
 	.then(data => {
+		// Access DOM elements
 		const todoList = document.getElementById('todo-list');
 		const userFilter = document.getElementById('user-filter');
 		const completedFilter = document.getElementById('completed-filter');
@@ -19,6 +21,7 @@ fetch('https://jsonplaceholder.typicode.com/todos')
 
 		// Render todos based on filters
 		const renderTodos = () => {
+			// Retrieve the selected user value and completed value from the filter elements
 			const selectedUser = userFilter.value;
 			const completedValue = completedFilter.value;
 
